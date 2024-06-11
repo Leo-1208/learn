@@ -7,7 +7,9 @@ app.get('/', (a,b,c)=>{
     b.send('Hello World');
 
 })
-
+app.get('/shrey', (req, res)=>{
+    res.send('I am shreyash');
+})
 app.listen(process.env.PORT, ()=>{
     console.log(`Example app is listening on port ${process.env.PORT}`)
 })
